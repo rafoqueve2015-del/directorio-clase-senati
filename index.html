@@ -1,160 +1,304 @@
+
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taller colaborativo Git y GitHUB</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <h1>Objetivo del Taller</h1>
-      <p>
-        Los alumnos participan simultáneamente en un único repositorio remoto, 
-        experimentando el flujo corporativo de Ramas (Branches), Commits,
-        Push y Pull Requests, visualizando un resultado web final integrado.
-      </p>
-    </header>
-    <!-- Tarjetas de contacto -->
-    <main class="grid-container" id="tarjetas">
-      <!-- TARJETA DEL INSTRUCTOR -->
-      <div class="card instructor-card">
-        <div class="card-header">
-          <h3>Rafael Quevedo Mogollón</h3>
-          <span class="badge">Instructor</span>
-        </div>
-        <div class="card-body">
-          <p><strong>Especialidad:</strong> Software, IoT & Cloud</p>
-          <p><em>"Bienvenidos al taller de Colaborando en proyectos con Git y Github"</em></p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taller colaborativo Git y GitHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="main-header">
+    <h1>Objetivo del Taller</h1>
+    <p>
+      Los alumnos participan simultáneamente en un único repositorio remoto,
+      experimentando el flujo corporativo de Ramas (Branches), Commits,
+      Push y Pull Requests, visualizando un resultado web final integrado.
+    </p>
+  </header>
+
+  <!-- TARJETAS DE CONTACTO -->
+  <main class="grid-container" id="tarjetas">
+
+    <!-- TARJETA DEL INSTRUCTOR -->
+    <div class="card instructor-card">
+      <div class="card-header">
+        <h3>Rafael Quevedo Mogollón</h3>
+        <span class="badge">Instructor</span>
       </div>
 
-      <!-- Por favor en esta zona los alumnos colocarán sus tarjetas de contacto personal -->
-      <!-- Ejemplo 01 -->
-        <div class="card">
-            <div class="card-header">
-                <h3>Jhonny Paul Veliz Ipanaqué</h3>
-                <span class="badge">V Semestre - Ing. de Software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnologías principales:</strong> Python, Java, PHP & JS</p>
-                <p><em>"Apasionado por el desarrollo de software, la IA y los sistemas IoT."</em></p> 
-                <h3>Gabriel Leonardo Veliz Gutarra</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Node.js</p>
-                <p><em>"Apasionado por el desarrollo de software, la ciberseguridad y aprender constantemente."</em></p> 
-            </div>
-        </div>
-            <div class="card">
-            <div class="card-header">
-                <h3>Salomon Moreyra Peralata</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Node.js</p>
-                <p><em>"Apasionado por el desarrollo de software y la ciberseguridad."</em></p> 
-            </div>
-        </div>
+      <div class="card-body">
+        <p><strong>Especialidad:</strong> Software, IoT &amp; Cloud</p>
+        <p>
+          <em>
+            "Bienvenidos al taller de Colaborando en proyectos con Git y Github"
+          </em>
+        </p>
+      </div>
+    </div>
 
-         <!-- Comentarios datos fernanda -->
-        <div class="card">
-            <div class="card-header">
-                <h3>Fernanda Palacios Morales</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Node.js</p>
-                <p><em>"Apasionado por el desarrollo de software."</em></p> 
-            </div>
-        </div>
-        
-        <!-- Ejemplo 01 -->
-        <div class="card">
-            <div class="card-header">
-                <h3>Carlos Saldarriaga Aguilar</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript, Node.js</p>
-                <p><em>"Apasionado por la tecnología y el desarrollo de software."</em></p> 
-            </div>
-        </div>
-        
-        <div class="card">
-          <header class="card-header">
-            <h3>Pablo Angel Sandoval Zapata</h3>
-            <span class="badge">Estudiante Ing. Software con IA | Dev Wannabe</span>
-          </header>
-          
-          <div class="card-body">
-            <dl class="tech-stack">
-              <dt>Favoritos</dt>
-              <dd>Python, Go</dd>
-              
-              <dt>Explorando</dt>
-              <dd>Rust, Zig, Kotlin</dd>
-            </dl>
+    <!-- ALUMNO 01: JHONNY PAUL -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Jhonny Paul Veliz Ipanaqué</h3>
+        <span class="badge">V Semestre - Ing. de Software con IA</span>
+      </div>
 
-            <p class="filosofia">
-              FOSS-first (cuando es viable), privacidad, ligereza y optimización. 
-              Altos estándares de calidad y rendimiento.
-            </p>
+      <div class="card-body">
+        <p><strong>Tecnologías principales:</strong> Python, Java, PHP &amp; JS</p>
+        <p>
+          <em>
+            "Apasionado por el desarrollo de software, la IA y los sistemas IoT."
+          </em>
+        </p>
+      </div>
+    </div>
 
-            <p class="intereses">
-              Ingeniería Inversa: <a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">REA Project</a> · 
-              Ecosistema Rust: <a href="https://rust-lang.org/" target="_blank" rel="noopener noreferrer">rust-lang.org</a>
-            </p>
-          </div>
-        </div>
+    <!-- ALUMNO 02: GABRIEL LEONARDO -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Gabriel Leonardo Veliz Gutarra</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
 
-         <div class="card">
-            <div class="card-header">
-                <h3>Nicol Zapata Rufino</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Python</p>
-                <p><em>"Me gusta desarrollar y crear asistentes con IA."</em></p> 
-           <div class="card">
-            <div class="card-header">
-                <h3>Jean Rumiche</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript, PHP, python</p>
-                <p><em>"Apasionado por el desarrollo de software y la ciberseguridad."</em></p> 
-            </div>
-        </div>
+      <div class="card-body">
+        <p><strong>Tecnología favorita:</strong> JavaScript &amp; Node.js</p>
+        <p>
+          <em>
+            "Apasionado por el desarrollo de software, la ciberseguridad y aprender constantemente."
+          </em>
+        </p>
+      </div>
+    </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h3>Alumno Patrick</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Node.js</p>
-                <p><em>"Apasionado por el desarrollo de software."</em></p> 
-            </div>
-        </div>
-        
-      <!-- Akaza -->
-        <div class="card" style="border-top: 5px solid green;">
-            <div class="card-header" style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
-                <h3 style="margin: 0;">Akaza</h3>
-                <span class="badge">Estudiante Ingeniería de software con IA</span>
-            </div>
-            <div class="card-body">
-                <p><strong>Tecnología favorita:</strong> JavaScript & Node.js</p>
-                <p><em>"alumno senati good"</em></p> 
-            </div>
-        </div>
-        
-    </main>
+    <!-- ALUMNO 03: SALOMON -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Salomon Moreyra Peralata</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
 
-    <footer class="main-footer">
-      <p>&copy; 2026 - SENATI. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+      <div class="card-body">
+        <p><strong>Tecnología favorita:</strong> JavaScript &amp; Node.js</p>
+        <p>
+          <em>
+            "Apasionado por el desarrollo de software y la ciberseguridad."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 04: FERNANDA -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Fernanda Palacios Morales</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnología favorita:</strong> JavaScript &amp; Node.js</p>
+        <p>
+          <em>
+            "Apasionada por el desarrollo de software."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 05: CARLOS -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Carlos Saldarriaga Aguilar</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnologías favoritas:</strong> JavaScript, Node.js</p>
+        <p>
+          <em>
+            "Apasionado por la tecnología y el desarrollo de software."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 06: PABLO ANGEL -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Pablo Angel Sandoval Zapata</h3>
+        <span class="badge">Estudiante Ing. Software con IA | Dev Wannabe</span>
+      </div>
+
+      <div class="card-body">
+        <dl class="tech-stack">
+          <dt><strong>Favoritos</strong></dt>
+          <dd>Python, Go</dd>
+
+          <dt><strong>Explorando</strong></dt>
+          <dd>Rust, Zig, Kotlin</dd>
+        </dl>
+
+        <p class="filosofia">
+          FOSS-first (cuando es viable), privacidad, ligereza y optimización.
+          Altos estándares de calidad y rendimiento.
+        </p>
+
+        <p class="intereses">
+          Ingeniería Inversa:
+          <a href="https://github.com/morluto/rea"
+             target="_blank"
+             rel="noopener noreferrer">REA Project</a>
+          · Ecosistema Rust:
+          <a href="https://rust-lang.org/"
+             target="_blank"
+             rel="noopener noreferrer">rust-lang.org</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 07: NICOL -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Nicol Zapata Rufino</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnologías favoritas:</strong> JavaScript &amp; Python</p>
+        <p>
+          <em>
+            "Me gusta desarrollar y crear asistentes con IA."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 08: JEAN -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Jean Rumiche</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnologías favoritas:</strong> JavaScript, PHP, Python</p>
+        <p>
+          <em>
+            "Apasionado por el desarrollo de software y la ciberseguridad."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 09: PATRICK -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Alumno Patrick</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnología favorita:</strong> JavaScript &amp; Node.js</p>
+        <p>
+          <em>
+            "Apasionado por el desarrollo de software."
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- ALUMNO 10: AKAZA -->
+    <div class="card akaza-card">
+      <div class="card-header">
+        <h3>Akaza</h3>
+        <span class="badge">Estudiante Ingeniería de software con IA</span>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Tecnología favorita:</strong> JavaScript &amp; Node.js</p>
+        <p><em>"alumno senati good"</em></p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- PROGRESO DEL TALLER -->
+  <section class="progreso-taller" id="progreso">
+    <h2>Progreso del Taller</h2>
+
+    <p class="progreso-descripcion">
+      Etapas del trabajo colaborativo con Git y GitHub.
+    </p>
+
+    <div class="progreso-container">
+
+      <!-- PASO 01: BRANCH -->
+      <div class="progreso-card">
+        <div class="progreso-numero">01</div>
+        <h3>Crear una rama</h3>
+        <span class="progreso-etiqueta">Branch</span>
+
+        <p>
+          Creamos una rama independiente para desarrollar nuevas
+          funcionalidades sin modificar directamente la rama principal.
+        </p>
+
+        <code>git checkout -b nueva-rama</code>
+      </div>
+
+      <!-- PASO 02: COMMIT -->
+      <div class="progreso-card">
+        <div class="progreso-numero">02</div>
+        <h3>Guardar cambios</h3>
+        <span class="progreso-etiqueta">Commit</span>
+
+        <p>
+          Registramos los cambios realizados en el proyecto con
+          un mensaje que describe las modificaciones.
+        </p>
+
+        <code>git add .</code>
+        <code>git commit -m "Agregar cambios"</code>
+      </div>
+
+      <!-- PASO 03: PUSH -->
+      <div class="progreso-card">
+        <div class="progreso-numero">03</div>
+        <h3>Subir cambios</h3>
+        <span class="progreso-etiqueta">Push</span>
+
+        <p>
+          Enviamos nuestros commits al repositorio remoto para
+          compartir el trabajo con los demás integrantes del equipo.
+        </p>
+
+        <code>git push origin nueva-rama</code>
+      </div>
+
+      <!-- PASO 04: PULL REQUEST -->
+      <div class="progreso-card">
+        <div class="progreso-numero">04</div>
+        <h3>Integrar cambios</h3>
+        <span class="progreso-etiqueta">Pull Request</span>
+
+        <p>
+          Solicitamos revisar e integrar nuestros cambios en la
+          rama principal mediante una Pull Request en GitHub.
+        </p>
+
+        <code>GitHub → Pull requests</code>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>&copy; 2026 - SENATI. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
 </html>
